@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*header*/
+.header-list {
+    display: flex;
+    list-style: none;
+    font-size: 10px;
+}
+.header-list li {
+    padding: 0 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+}
+.header-logo {
+    width: 200px;
+    height: 55%;
+}
+.bold {
+    font-weight: 900;
+    font-size: 14px;
+}
+.button-orange {
+    background-color: rgb(250, 130, 50);
+    color: white;
+    border-radius: 20px;
+}
+
+/*article*/
+h1 {
+    font-size: 40px;
+}
+/*section*/
