@@ -1,40 +1,216 @@
 @charset "UTF-8";
+/*共通*/
 
-/*header*/
-.header-list {
-    display: flex;
-    list-style: none;
-    font-size: 10px;
-}
-.header-list li {
-    padding: 0 20px;
-    text-align: center;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    
-    padding: 20px;
-}
-.header-logo {
-    width: 200px;
-    height: 55%;
+a {
+    color: black;
+    text-decoration: none;
 }
 .bold {
     font-weight: 900;
-    font-size: 14px;
+    font-size: larger;
 }
-.button-orange {
-    background-color: rgb(250, 130, 50);
-    color: white;
-    border-radius: 20px;
-    padding: 15px;
-    margin-top: 5px;
+.small {
+    font-size: 3px;
+    color: rgb(255, 153, 0)
+}
+img {
+    max-width: 100%;
+}
+body {
+    width: 100%;
+}
+.bold2 {
+    color: rgb(255, 153, 0);
+    font-weight: 900;
+    font-size: larger;
 }
 
-/*article*/
-h1 {
-    font-size: 40px;
+/*header*/
+header {
+    position: relative;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
 }
-/*section*/
+.nav-menu {
+    display: none;
+}
+.header-logo img{
+    height: 20px
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navi-list {
+    display: flex;
+    align-items: center;
+    
+}
+.header-navi-list li{
+    list-style: none;
+    padding: 0 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.button-orange {
+    background-color: rgb(255, 153, 0);
+    border-radius: 60px;
+    padding: 15px;
+    color:white
+}
+
+.first-view {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:100px;
+}
+.first-view-container { 
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+.first-view-containt {
+    width: fit-content;
+    margin-bottom: 60px;
+}
+.first-view-containt-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.first-view-containt-images {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+.button-white {
+    background-color: white;
+    border: 1px rgb(220, 220, 220) solid;
+    border-radius: 60px;
+    padding: 15px
+}
+.first-view-notes {
+    font-size: 3px;
+    color: darkgray;
+}
+
+
+/*ABOUT*/
+.about-potepan {
+    background-color: rgb(255, 153, 0);
+    padding: 60px;
+}
+.about-container {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin:  0 auto;
+    align-items: center;
+    padding: 0 50px;
+    
+}
+.about-main {
+    width: 50%;
+    color: white;
+    ;
+}
+.about-main h2 {
+    margin-bottom: 20px;
+}
+.about-button {
+    background-color: white;
+    color: rgb(255, 153, 0);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 60px;
+    padding: 2px 60px 2px 60px;
+    text-align: center;    
+}
+.about-button p {
+    margin: 0 auto;
+}
+
+/*iPhone*/
+@media (max-width:600px){
+    body {
+        float: none;
+        position: static;
+        padding: 0;
+        margin: 0;
+        max-width: 600px;
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        position: relative;
+        
+    }
+    .nav-menu {
+        display: block;
+    }
+    .header-logo {
+        
+    }
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-navi {
+        display: none;
+    }
+    .fa-bars {
+        color: black;
+        font-size: 30px;
+    }
+    .first-view {
+        background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+    .first-view-containt {
+        position: relative ;
+        top: 300px;
+    }
+    .first-view-notes {
+        position: relative ;
+        top: 300px;
+        margin-bottom: 10px;
+    }
+    .about-potepan {
+        position: relative ;
+        top: 300px;
+    }
+    .about-container {
+        display: inherit;
+    }
+    .about-main {
+        width:100%;
+        margin-bottom: 30px;
+    }
+    .about-button {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .bold2, .small {
+        color: rgb(255, 153, 0);
+    }
+}
+
