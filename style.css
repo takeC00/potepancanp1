@@ -55,12 +55,7 @@ header {
     font-size: 12px;
     text-align: center;
 }
-.button-orange {
-    background-color: rgb(255, 153, 0);
-    border-radius: 60px;
-    padding: 15px;
-    color:white
-}
+
 
 .first-view {
     background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
@@ -95,9 +90,22 @@ header {
 }
 .button-white {
     background-color: white;
-    border: 1px rgb(220, 220, 220) solid;
+    border: 2px rgb(220, 220, 220) solid;
     border-radius: 60px;
     padding: 15px
+}
+
+.button-orange {
+    background-color: rgb(255, 153, 0);
+    border-radius: 60px;
+    padding: 15px;
+    color:white;
+}
+.button-orange a {
+    color: white;
+}
+.button-orange:hover {
+    background-color: rgb(247, 189, 102);
 }
 .first-view-notes {
     font-size: 3px;
@@ -136,16 +144,24 @@ header {
     padding: 2px 60px 2px 60px;
     text-align: center;    
 }
+.about-button:hover {
+    background-color: rgb(240, 193, 131);
+}
 .about-button p {
     margin: 0 auto;
 }
 
 /*iPhone*/
 @media (max-width:600px){
+    * {
+        max-width: 600px;
+        margin-left: 0;
+    }
+    
     body {
         float: none;
         position: static;
-        padding: 0;
+        padding: none;
         margin: 0;
         max-width: 600px;
         width: 100%;
@@ -156,6 +172,7 @@ header {
     }
     header {
         position: relative;
+        width: 95%
         
     }
     .nav-menu {
@@ -175,20 +192,43 @@ header {
         color: black;
         font-size: 30px;
     }
+    
     .first-view {
         background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg);
         background-size: cover;
         background-position: center;
         padding: 0;
     }
+    .first-view-container {
+        max-width: 600px;
+    }
     .first-view-containt {
         position: relative ;
         top: 300px;
+        width: min-content;
+    }
+    .first-view-containt-images {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 10%;
     }
     .first-view-notes {
         position: relative ;
         top: 300px;
         margin-bottom: 10px;
+    }
+    .button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 75vh;
+    }
+    .button-orange {
+        margin-bottom: 30px;
+    }
+    .button-white {
+    
     }
     .about-potepan {
         position: relative ;
